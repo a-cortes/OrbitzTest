@@ -276,8 +276,8 @@ public class OrbitzTest {
 	public void presiono_Search() throws Throwable {
 		driver.findElement(By.id("search-button")).click();
 
-		element = wait.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("//*[@id=\"sortContainer\"]/div/div[1]/div[2]/div/fieldset/ul/li[3]/button")));
+		element = wait.until(ExpectedConditions.presenceOfElementLocated(
+				By.xpath("//*[@id=\"hotelResultTitle\"]/h1")));
 
 	}
 
